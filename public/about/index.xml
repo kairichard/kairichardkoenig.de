@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on Hugo Whisper Theme</title>
+    <link>/about/</link>
+    <description>Recent content in About on Hugo Whisper Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Nov 2018 15:14:39 +1000</lastBuildDate>
+    
+	<atom:link href="/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Projects</title>
+      <link>/about/projects/</link>
+      <pubDate>Mon, 11 Feb 2019 19:27:37 +1000</pubDate>
+      
+      <guid>/about/projects/</guid>
+      <description>Checkout projects Kai worked on or is still working on</description>
+    </item>
+    
+    <item>
+      <title>Principles</title>
+      <link>/about/principles/</link>
+      <pubDate>Mon, 11 Feb 2019 19:30:08 +1000</pubDate>
+      
+      <guid>/about/principles/</guid>
+      <description>This document helps Kai steer his decisions on a daily basis and with being consistent with what to strive for.</description>
+    </item>
+    
+    <item>
+      <title>Work</title>
+      <link>/about/work/</link>
+      <pubDate>Mon, 11 Feb 2019 19:30:08 +1000</pubDate>
+      
+      <guid>/about/work/</guid>
+      <description>Get an overview where Kai worked at and what he delivered during his time.</description>
+    </item>
+    
+    <item>
+      <title>Talks</title>
+      <link>/about/talks/</link>
+      <pubDate>Mon, 11 Feb 2019 19:27:37 +1000</pubDate>
+      
+      <guid>/about/talks/</guid>
+      <description>Kai has a lot of experience talking in front of people - checkout his recent public talks.</description>
+    </item>
+    
+  </channel>
+</rss>
