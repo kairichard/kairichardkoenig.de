@@ -23,12 +23,18 @@ summaryLength = 30
     url = "/about/"
     weight = 2
 
+[[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 3
+
 [params]
   google_analytics_id=""
   homepage_button_link = '/about'
   homepage_button_text = 'More'
   homepage_intro = 'A generalist always searching for new oppertunities to grow.'
   homepage_image = '/images/terminal.gif'
+  mainSections = ["blog", "about"]
 
   ## You can enable to add anchor links to header elements
   # enable_anchor_link = true

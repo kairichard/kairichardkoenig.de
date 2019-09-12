@@ -1,0 +1,19 @@
+{{ define "header_css" }}
+<!-- Start emojicom.io widget -->
+<script>window.emojicom_widget = { campaign: "qwKXy2uE7YKK6fARqo7o" };</script>
+<script src="https://cdn.emojicom.io/embed/widget.js" async></script>
+<!-- End emojicom.io widget -->
+{{ end }}
+{{ define "body_classes" }}page-default-single{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+<div class="blog">
+<h1 class="title">{{.Title}}</h1>
+<div class="content {{if .Site.Params.enable_anchor_link}}{{ "anchor-link-enabled" }}{{ end }}">
+  {{.Content}}
+</div>
+<div id="emojicom-widget-inline"></div>
+</div>
+</div>
+{{ end }}

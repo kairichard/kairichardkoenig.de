@@ -1,6 +1,5 @@
 // Font
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Lora:400,700|Roboto+Mono:300,400');
-
 // Bootstrap
 @import 'bootstrap/functions';
 @import 'bootstrap-variables';
@@ -37,6 +36,7 @@
 
 // Pages
 @import 'pages/home';
+@import 'pages/blog';
 
 // Global
 body {
