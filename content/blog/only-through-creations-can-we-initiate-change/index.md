@@ -19,7 +19,7 @@ There were multiple reasons why I felt the need to do that. First, I wanted to k
 
 #### Self vs. Others
 
-I was totally astounded by the number of users who started using that little tool. I got exactly one user, which was me. Was I aiming for more? Maybe, maybe some validation beyond just me patting my self on the back seeing that I am still able to swing things together and make something work front to back. By the way, I since shut that thing down. Mainly because, well, I now use [Think Or Swim](https://www.tdameritrade.com/tools-and-platforms/thinkorswim/features.page), which does price alerts and a lot more.
+I was totally astounded by the number of users who started using that little tool. Not. It had exactly one user, which was me. Was I aiming for more? Maybe, maybe some validation beyond just me patting my self on the back seeing that I am still able to swing things together and make something work front to back. By the way, I since shut that thing down. Mainly because, well, I now use [Think Or Swim](https://www.tdameritrade.com/tools-and-platforms/thinkorswim/features.page), which does price alerts and a lot more.
 
 But what is important are the following things, no one cares what I build and that is a good thing because the world is not about me it's about the people around me. I should have built something for them, help them with your skills and abilities. Another valuable lesson was that my reach is almost equal to zero.
 
