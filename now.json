@@ -2,8 +2,12 @@
     "version": 2,
     "name": "kairichardkoenig.de",
     "alias": "kairichardkoenig.de",
-    "scripts": {
-      "build": "hugo"
-    }
+    "builds": [
+      {
+        "src": "build.sh",
+        "use": "@now/static-build",
+        "config": { "distDir": "public" }
+      }
+    ]
   }
 
