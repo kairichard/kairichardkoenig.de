@@ -31,7 +31,7 @@ Well, it means the lines visited during a test run, so it is not meaningless. Bu
 Take Facebook, for example. Their main goal is creating relevant ad space to sell to advertisers. How do they do that? By attracting and keeping users engaged to the platform for as long as possible. And now it's your exercise to figure out where they probably have the most tests.
 
 Take the application we are building at [Bitspark](https://bitspark.de/). It's a microservice architecture around a [VPL-Runtime](https://github.com/Bitspark/slang). The central piece of software that we [build](https://github.com/Bitspark/telstar) to enable all services to talk to each other has extensive [tests](https://github.com/Bitspark/telstar/blob/master/test_telstar.py) and even a [simulation](https://github.com/Bitspark/telstar/blob/master/telstar/tests/test_telstar.sh) to guarantee properties we want.
-The VPL-Runtime] has a few [tests](https://github.com/Bitspark/slang/tree/master/tests), but the services don't except for some parts of the authentication and parts of how we deploy user instances.  
+The VPL-Runtime has a few [tests](https://github.com/Bitspark/slang/tree/master/tests), but the services don't except for some parts of the authentication and parts of how we deploy user instances.  
 The frontend, naah. Why? Because we don't know yet what brings the most value and we need a high degree of flexibility.
 
 Want to skip tests altogether may be the [shift to the right](https://www.getxray.app/blog/shift-left-and-shift-right-testing-strategies/) is for you.
