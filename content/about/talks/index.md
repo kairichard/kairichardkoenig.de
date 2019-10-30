@@ -5,6 +5,11 @@ weight: 6
 summary: Kai has a lot of experience talking in front of people - checkout his recent public talks.
 ---
 
+### [#DevJourney](https://twitter.com/DevJourneyFM) Episode #73 with [@timothep](https://twitter.com/timothep)
+
+Kai started by describing his first steps into HTML, manually scratching his own itch. He then described his troubled studies and how he ended up in an apprenticeship position. We then spoke about the beauty of the Ruby language, about intuition and aesthetics. We discussed testing, TDD and the art of producing simple code. We finally jumped forward to the no-code movement and the future of our industry.
+
+[Listen here](https://devjourneyfm.github.io/Guests/73_KaiKoenig.html)
 
 ![Super wide](/images/talks/vim.png#block)
 ### Building the ultimate business unit - Q2/2019 [@APX](https://twitter.com/joinAPX)
