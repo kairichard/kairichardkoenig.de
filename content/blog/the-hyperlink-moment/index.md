@@ -12,4 +12,4 @@ What did the world look like before the hyperlink was invented? There is a simil
 
 Think about for a moment, there is almost no knowledge today that is not discoverable and interlinked with other information, basically, the internet can be viewed as an enormous knowledge graph, all thanks to the hyperlink. One document pointing to the next. Brilliant. Yet so simple.
 
-What is the next signification moment related to human knowledge augmentation?
+What is the next significant moment related to human knowledge augmentation?
