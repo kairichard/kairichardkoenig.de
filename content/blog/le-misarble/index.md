@@ -3,6 +3,8 @@ title: 'Le miserable expressionist'
 date: 2019-02-11T19:30:08+10:00
 draft: false
 weight: 4
+keywords: 
+    - self
 summary: I always sucked at writing; I still do. I even think it limits positive change and value I could bring to my community - it's frustrating. 
 ---
 

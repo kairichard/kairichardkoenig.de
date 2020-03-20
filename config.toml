@@ -12,6 +12,16 @@ enableEmoji = true
 # Controls how many words are printed in the content summary on the docs homepage.
 # See https://gohugo.io/content-management/summaries/
 summaryLength = 30
+[related]
+toLower = false
+includeNewer = true
+threshold = 80
+  [[related.indices]]
+  name = "keywords"
+  weight = 100.0
+  [[related.indices]]
+  name = "date"
+  weight = 10.0
 
 [[menu.main]]
     name = "Home"

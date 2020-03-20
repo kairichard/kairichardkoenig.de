@@ -3,6 +3,8 @@ title: 'Only through creations can we initiate change'
 date: 2019-02-11T19:30:08+10:00
 draft: false
 weight: 4
+keywords: 
+    - self
 summary: Some time ago, I tweeted about a service I have built - here are some lessons I learned from that. 
 ---
 

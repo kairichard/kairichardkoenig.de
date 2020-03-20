@@ -3,6 +3,8 @@ title: You don't need tests
 date: 2019-02-11T19:30:08+10:00
 draft: false
 weight: 4
+keywords: 
+    - tech
 summary: Tests, yes tests, tests make you slow; they give you a false sense of confidence. You should determine the health of the system in other ways than solely relying on tests.  
 ---
 Tests, yes tests, tests make you slow; they give you a false sense of confidence. You should determine the health of the system in other ways than solely relying on tests.

@@ -3,6 +3,8 @@ title: How nature might cut the monolith?
 date: 2020-03-11T19:30:08+10:00
 draft: false
 weight: 4
+keywords: 
+    - tech
 summary: Inspired by nature let's look at what strategy we could derive to cut down a monolith
 ---
 
