@@ -20,13 +20,13 @@ When entering a maturity stage of a product, some companies end up having tons o
 #### What to test and what not to test
 
 First, don't test what you don't own.
-For example, testing that UUIDs can be generated from that 3rd party library, you just installed is just nuts. And stop testing if a field gets correctly mapped between the database and your application when you use an ORM.
+For example, testing that UUIDs can be generated from that 3rd party library you just installed is just nuts. And stop testing if a field gets correctly mapped between the database and your application when you use an ORM.
 
 What you should test is the central promise, your primary assumption about what brings value to your customers. And it is crucial to understand what your customers actually define as value.
 
 #### Stop using coverage; it is meaningless
 
-Well, it means the lines visited during a test run, so it is not meaningless. But in the context of having an impact on your primary goal, revenue, users, interactions, coverage does not tell you anything. It's a vanity metric. What is more, impactful is to show visited lines during production, because that starts to bear some meaning. It shows for examples which parts of your application are heavily relied up on, which could mean that is where most of the value comes from. But using (production) coverage does not exempt you from talk to your power-users.
+Well, it means the lines visited during a test run, so it is not meaningless. But in the context of having an impact on your primary goal, revenue, users, interactions, coverage does not tell you anything. It's a vanity metric. What is more impactful is to show visited lines during production because that starts to bear some meaning. It shows for examples which parts of your application are heavily relied up on, which could mean that is where most of the value comes from. But using (production) coverage does not exempt you from talk to your power-users.
 
 #### Examples
 
