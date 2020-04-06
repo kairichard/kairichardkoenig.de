@@ -2,7 +2,7 @@
 title: The hyperlink moment
 date: 2020-03-16T19:30:08+10:00
 draft: false
-weight: 1
+weight: 4
 keywords: 
     - self
 summary: May be the single most propelling moment in human history

@@ -62,3 +62,15 @@ threshold = 80
   [params.logo]
       mobile = "/images/head_circle.png"
       standard  = "/images/head_circle.png"
+
+[markup]
+  [markup.highlight]
+    codeFences = false
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = false
+    noClasses = true
+    style = "monokailight"
+    tabWidth = 4
