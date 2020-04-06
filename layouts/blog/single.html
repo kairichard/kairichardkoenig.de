@@ -5,10 +5,22 @@
 
 {{ define "main" }}
   <div class="blog">
-    <h1 class="title">{{.Title}}</h1>
-    <div class="content {{if .Site.Params.enable_anchor_link}}{{ "anchor-link-enabled" }}{{ end }}">
-      {{.Content}}
+    <div class="meta text-muted mb-3">
+      <p class="created text-muted text-uppercase font-weight-bold mb-1">{{ .Date.Format "January 2, 2006" }}</p>
+  </div>
+    <div style="text-align: center; margin: 0px 0 20px 0">
+      {{ with .Resources.Match "images/splash**" }}
+      {{ range . }}
+          {{ $scaled := .Fill "820x300 top" }}
+          <img style="margin: 1px 0 1px 0 ;" src="{{ $scaled.Permalink }}">
+      {{ end }}
+    {{ end }}
+
     </div>
+  <h1 class="title">{{.Title}}</h1>
+  <div class="content {{if .Site.Params.enable_anchor_link}}{{ "anchor-link-enabled" }}{{ end }}">
+    {{.Content}}
+  </div>
   </div>
   <hr/>
   {{ $related := .Site.RegularPages.Related . | first 5 }}
