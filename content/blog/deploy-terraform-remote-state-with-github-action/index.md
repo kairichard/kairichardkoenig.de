@@ -1,5 +1,5 @@
 ---
-title: "Deploying with github actions using terraform cloud"
+title: "Deploying with Github Actions using Terraform Cloud"
 date: 2019-04-11
 draft: false
 weight: 1
@@ -12,12 +12,12 @@ Terraform is a tool for building, changing, and versioning infrastructure safely
 
 Configuration files describe to Terraform the components needed to run a single application or your entire datacenter. Terraform generates an execution plan describing what it will do to reach the desired state, and then executes it to build the described infrastructure. As the configuration changes, Terraform is able to determine what changed and create incremental execution plans which can be applied. For more information go [here](https://www.terraform.io/intro/index.html).
 
-However if you are familiar with terraform you already know that without a remote state it quickly becomes cumbersome to share the state of your infrastructure and guarantee consistency between plan executions.
+However if you are familiar with Terraform you already know that without a remote state it quickly becomes cumbersome to share the state of your infrastructure and guarantee consistency between plan executions.
 
-In this tutorial we will see how you can use [github actions](https://github.com/features/actions) and [terraform cloud](https://www.terraform.io/) to build a infrastructure and deploy changes without worrying about your terraform state.
+In this tutorial we will see how you can use [Github Actions](https://github.com/features/actions) and [Terraform Cloud](https://www.terraform.io/) to build a infrastructure and deploy changes without worrying about your Terraform state.
 
 #### Step 1 - Register with Terraform Cloud
-If you haven't already, get a account with [terraform](https://www.terraform.io/) - it's free. Follow the instructions and setup your organization and your first workspace. Next we need to obtain a token for that workspace which we are going to use later.
+If you haven't already, get a account with [Terraform](https://www.terraform.io/) - it's free. Follow the instructions and setup your organization and your first workspace. Next we need to obtain a token for that workspace which we are going to use later.
 {{< highlight bash  >}}
 
 >> terraform login
@@ -30,17 +30,17 @@ the following file for use by subsequent commands:
 Do you want to proceed? (y/n)
 {{< / highlight >}}
 
-Follow the instructions and paste the token into the command line. So far so good, we are setup. Now we are good to go and build our first terraform infrastructure.
+Follow the instructions and paste the token into the command line. So far so good, we are setup. Now we are good to go and build our first Terraform infrastructure.
 
-#### Step 2 - Create your terraform plan
-We are going to use a very simple terraform plan to demonstrate this setup - for more information on what can be done with terraform checkout the [guides](https://learn.hashicorp.com/terraform). 
+#### Step 2 - Create your Terraform plan
+We are going to use a very simple Terraform plan to demonstrate this setup - for more information on what can be done with Terraform checkout the [guides](https://learn.hashicorp.com/terraform). 
 {{< highlight bash  >}}
 > mkdir terraform-github-actions
 > cd !$
 > vi infrastructure.tf
 {{< / highlight >}}
 
-Next we are going to tell terraform to use a remote backed to manage the state of our infrastructure.
+Next we are going to tell Terraform to use a remote backed to manage the state of our infrastructure.
 
 {{< highlight terraform  >}}
 terraform {
@@ -61,14 +61,14 @@ Now we are ready to initialize our new remote state.
 > terraform init
 {{< / highlight >}}
 
-When the command succeeded go back to your [terraform](https://www.terraform.io/) account and go to general setting of your workspace and mark the state as local. This allows us to use it in CI/CD.
+When the command succeeded go back to your [Terraform](https://www.terraform.io/) account and go to general setting of your workspace and mark the state as local. This allows us to use it in CI/CD.
 
 <center>
 ![alt text](images/exec_mode.png)
 </center>
 
 #### Step 3 - Adding a provider and resources.
-Now we are ready to tell terraform what resources we want to create and where. For this demonstration we are going to use a simple lamp stack and deploy changes to one of the HTML files. 
+Now we are ready to tell Terraform what resources we want to create and where. For this demonstration we are going to use a simple lamp stack and deploy changes to one of the HTML files. 
 
 {{< highlight terraform  >}}
 variable do_token {}
@@ -143,11 +143,11 @@ resource "null_resource" "deploy" {
 {{< / highlight >}}
 
 The line `always_run = "${timestamp()}"` forces terraform to always execute this block. 
-We are going to use this fact to update our `server` on each commit with github actions.
+We are going to use this fact to update our `server` on each commit with Github Actions.
 
-#### Step 4 - Create a repository and CI in github
+#### Step 4 - Create a repository and CI in Github
 
-Next we want to automate the execution on each `git push` using github actions. But first we need create the actual repository and the necessary secrets under the settings tab. First `TF_VAR_do_token` which should hold your digital ocean token. And second we are going to need the terraform token for your workspace.
+Next we want to automate the execution on each `git push` using Github Actions. But first we need create the actual repository and the necessary secrets under the settings tab. First `TF_VAR_do_token` which should hold your digital ocean token. And second we are going to need the Terraform token for your workspace.
 Grab it with and put in a secret named `TF_TOKEN`.
 
 {{< highlight bash >}}
