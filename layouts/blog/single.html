@@ -1,4 +1,22 @@
 {{ define "header_css" }}
+ <!-- Twitter Card data -->
+ <meta name="twitter:card" content="summary_large_image">
+ <meta name="twitter:site" content="@kai_richard">
+ <meta name="twitter:title" content="{{ .Title }}">
+ <meta name="twitter:description" content="{{ .Summary }}">
+ <meta name="twitter:creator" content="@kai_richard">
+ <!-- Twitter summary card with large image must be at least 280x150px -->
+ <meta name="twitter:image:src" content="{{ ((.Resources.GetMatch "images/splash**").Resize "800x q90").Permalink }}">
+ 
+ <!-- Open Graph data -->
+ <meta property="og:title" content="{{ .Title }}" />
+ <meta property="og:type" content="article" />
+ <meta property="og:url" content="{{ .Permalink }}" />
+ <meta property="og:image" content="{{ ((.Resources.GetMatch "images/splash**").Resize "800x q90").Permalink }}" />
+ <meta property="og:description" content="{{ .Summary }}" />
+ <meta property="og:site_name" content="Kai Richard König" />
+ <meta property="article:published_time" content="{{.Date}}" />
+ <meta property="article:modified_time" content="{{.Date}}" />
 {{ end }}
 {{ define "body_classes" }}page-default-single{{ end }}
 {{ define "header_classes" }}{{ end }}
