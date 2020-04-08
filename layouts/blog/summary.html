@@ -1,0 +1,16 @@
+<div class="summary mb-2 mt-5">
+  <img
+    class="mb-1"
+    alt="{{ .Title }}"
+    src='{{ ((.Resources.GetMatch "images/splash**").Fill "800x250").Permalink | absURL}}'
+  />
+  <h2 class="title-summary">
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+  </h2>
+  <p>{{ .Summary }}</p>
+  <div class="text-muted">
+    <small class="created text-muted text-uppercase font">
+      {{ .Date.Format "January 2, 2006" }}
+    </small>
+  </div>
+</div>
