@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "Kai Richard König"
 themesDir = "themes"
 theme = "hugo-whisper-theme"
+enableInlineShortcodes = true
 
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
@@ -44,7 +45,7 @@ threshold = 80
   homepage_button_text = 'More'
   homepage_intro = 'A generalist always searching for new oppertunities to grow.'
   homepage_image = '/images/terminal.gif'
-  mainSections = ["blog", "about"]
+  mainSections = ["blog", "about", "imprint"]
 
   ## You can enable to add anchor links to header elements
   # enable_anchor_link = true
