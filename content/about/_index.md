@@ -6,9 +6,9 @@ weight: 1
 
 ## Kai Richard König
 
-He likes building teams, companies, strategies, and systems in general. And has a track record of delivering high impact as well as developing and operating distributed systems.
+My passion is in building teams, companies, strategies, and systems in general. I have a track record of delivering high impact as well as developing and operating data driven and distributed systems. I am a skilled Software-Engineer who can cover and work with traditional as well as modern web application stacks. My managerial abilities help me to build organizations that constantly deliver high value.
 
-When not working on clients Projects he works on Open Source fixing migration code in Django or improving the documentation for the Google Python SDKs. For more examples of his work check the links below.
+When not working on Projects I contribute to open source fixing migration code in Django or improving the python buildpack code for now.sh. According to GitHub I am among the top 5% contributors of 2019 in Germany. Apart working with code since I was 14 years old, I love hiking, playing badminton, traveling and reading up on topics related to psychology, philosophy, investing, business building and anything tech. 
 
 {{< rawhtml >}}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/fontawesome.min.css">
