@@ -1,55 +1,59 @@
 {{ define "header_css" }}
 <meta name="author" content="Kai Richard König">
- <!-- Twitter Card data -->
- <meta name="twitter:card" content="summary_large_image">
- <meta name="twitter:site" content="@kai_richard">
- <meta name="twitter:title" content="{{ .Title }}">
- <meta name="twitter:description" content="{{ .Summary }}">
- <meta name="twitter:creator" content="@kai_richard">
- <!-- Twitter summary card with large image must be at least 280x150px -->
- <meta name="twitter:image:src" content="{{ ((.Resources.GetMatch "images/splash**").Resize "800x q90").Permalink | absURL }}">
- 
- <!-- Open Graph data -->
- <meta property="og:title" content="{{ .Title }}" />
- <meta property="og:type" content="article" />
- <meta property="og:url" content="{{ .Permalink | absURL}}" />
- <meta property="og:image" content="{{ ((.Resources.GetMatch "images/splash**").Resize "800x q90").Permalink | absURL}}" />
- <meta property="og:description" content="{{ .Summary }}" />
- <meta property="og:site_name" content="Kai Richard König" />
- <meta property="article:published_time" content="{{.Date}}" />
- <meta property="article:modified_time" content="{{.Date}}" />
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@kai_richard">
+<meta name="twitter:title" content="{{ .Title }}">
+<meta name="twitter:description" content="{{ .Summary }}">
+<meta name="twitter:creator" content="@kai_richard">
+<!-- Twitter summary card with large image must be at least 280x150px -->
+<meta name="twitter:image:src"
+  content="{{ ((.Resources.GetMatch "images/splash**").Resize "800x q90").Permalink | absURL }}">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="{{ .Title }}" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="{{ .Permalink | absURL}}" />
+<meta property="og:image"
+  content="{{ ((.Resources.GetMatch "images/splash**").Resize "800x q90").Permalink | absURL}}" />
+<meta property="og:description" content="{{ .Summary }}" />
+<meta property="og:site_name" content="Kai Richard König" />
+<meta property="article:published_time" content="{{.Date}}" />
+<meta property="article:modified_time" content="{{.Date}}" />
 {{ end }}
 {{ define "body_classes" }}page-default-single{{ end }}
 {{ define "header_classes" }}{{ end }}
 
 {{ define "main" }}
-  <div class="blog">
-    <div class="meta text-muted mb-3">
-      <p class="created text-muted text-uppercase font-weight-bold mb-1">{{ .Date.Format "January 2, 2006" }}</p>
+<div class="blog">
+  <h1 class="title">{{.Title}}</h1>
+  <div class="meta text-muted mb-3">
+    <p class="created text-muted text-uppercase font-weight-bold mb-1"> in {{ delimit .Keywords  "," }} |
+      {{ .Date.Format "January 2, 2006" }}
+    </p>
   </div>
-    <div style="text-align: center; margin: 0px 0 20px 0">
-      {{ with .Resources.Match "images/splash**" }}
-      {{ range . }}
-          {{ $scaled := .Fill "820x300 top" }}
-          <img style="margin: 1px 0 1px 0 ;" src="{{ $scaled.Permalink }}">
-      {{ end }}
+  <div style="text-align: center; margin: 0px 0 20px 0">
+    {{ with .Resources.Match "images/splash**" }}
+    {{ range . }}
+    {{ $scaled := .Fill "1100x400 bottom" }}
+    <img style="margin: 1px 0 1px 0 ;" class="rounded img-fluid" src="{{ $scaled.Permalink }}">
+    {{ end }}
     {{ end }}
 
-    </div>
-  <h1 class="title">{{.Title}}</h1>
+  </div>
   <div class="content {{if .Site.Params.enable_anchor_link}}{{ "anchor-link-enabled" }}{{ end }}">
     {{.Content}}
   </div>
-  </div>
-  <hr/>
-  {{ $related := .Site.RegularPages.Related . | first 5 }}
-  {{ with $related }}
-  <h3>Other Content:</h3>
-  <ul>
-    {{ range . }}
-    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-    {{ end }}
-  </ul>
+</div>
+<hr />
+{{ $related := .Site.RegularPages.Related . | first 5 }}
+{{ with $related }}
+<h3>Other Content:</h3>
+<ul>
+  {{ range . }}
+  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
   {{ end }}
-  </div>
+</ul>
+{{ end }}
+</div>
 {{ end }}

@@ -2,7 +2,8 @@
 title: 'Talks'
 date: 2019-02-11T19:27:37+10:00
 weight: 6
-summary: Kai has a lot of experience talking in front of people - checkout his recent public talks.
+summary: I have given numerous presentation through out my career, here is a list of public talks I have held so far. 
+color: info
 ---
 
 ### [#DevJourney](https://twitter.com/DevJourneyFM) Episode #73 with [@timothep](https://twitter.com/timothep)

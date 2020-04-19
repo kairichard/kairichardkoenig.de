@@ -1,42 +1,49 @@
 // Font
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Lora:400,700|Roboto+Mono:300,400');
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Lora:400,700|Roboto+Mono:300,400");
 // Bootstrap
-@import 'bootstrap/functions';
-@import 'bootstrap-variables';
-@import 'bootstrap/variables';
-@import 'bootstrap/mixins';
-@import 'bootstrap/reboot';
-@import 'bootstrap/utilities';
-@import 'bootstrap/grid';
-@import 'bootstrap/tables';
+@import "bootstrap/functions";
+@import "bootstrap-variables";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/reboot";
+@import "bootstrap/utilities";
+@import "bootstrap/grid";
+@import "bootstrap/tables";
+@import "bootstrap/images";
+@import "bootstrap/buttons";
+@import "bootstrap/card";
+@import "bootstrap/badge";
+@import "bootstrap/alert";
 
 // Libraries
-@import 'libraries/hamburgers/hamburgers';
-@import 'libraries/pygments/github';
+@import "libraries/hamburgers/hamburgers";
+@import "libraries/pygments/github";
 
 // Components
-@import 'components/reset';
-@import 'components/type';
-@import 'components/page';
-@import 'components/header';
-@import 'components/footer';
-@import 'components/sub-footer';
-@import 'components/logo';
-@import 'components/main-menu';
-@import 'components/main-menu-mobile';
-@import 'components/docs-menu';
-@import 'components/hamburger';
-@import 'components/buttons';
-@import 'components/title';
-@import 'components/content';
-@import 'components/strip';
-@import 'components/whitebox';
-@import 'components/overview';
-@import 'components/anchor';
+@import "components/reset";
+@import "components/type";
+@import "components/page";
+@import "components/header";
+@import "components/footer";
+@import "components/sub-footer";
+@import "components/logo";
+@import "components/main-menu";
+@import "components/main-menu-mobile";
+@import "components/docs-menu";
+@import "components/hamburger";
+@import "components/buttons";
+@import "components/title";
+@import "components/content";
+@import "components/strip";
+@import "components/whitebox";
+@import "components/overview";
+@import "components/anchor";
+@import "components/buttons";
 
 // Pages
-@import 'pages/home';
-@import 'pages/blog';
+@import "pages/home";
+@import "pages/blog";
+@import "pages/work";
 
 // Global
 body {
@@ -45,6 +52,7 @@ body {
   font-weight: 400;
   line-height: 1.4;
   color: $black;
+  background-color: $background;
 }
 .container {
   padding-left: $grid-gutter-width;
@@ -56,24 +64,23 @@ img[src$="block"] {
 }
 img[src$="left"] {
   display: block;
-  float:left;
+  float: left;
   margin-right: 20px;
 }
 
 img[src$="right"] {
   display: block;
-  float:right;
+  float: right;
   margin-left: 20px;
 }
 
-.fab,
-.fas {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  color: rgb(92, 92, 92);
+.sub-footer {
+  .fab,
+  .fas {
+    font-size: 1.5em;
+    width: 2em;
+    text-decoration: none;
+  }
 }
 
 .image-cropper {
@@ -92,23 +99,12 @@ img[src$="right"] {
   width: auto;
 }
 
-// Display breakpoints for DEV
-// body:after {
-//   color: #000000;
-//   font-size: 12px;
-//   padding: 5px;
-//   font-weight: bold;
-//   right: 10px;
-//   position: fixed;
-//   text-align: center;
-//   text-transform: uppercase;
-//   bottom: 10px;
-//   width: 200px;
-//   z-index: 9999;
-//   border: solid 1px #000000;
-//   @each $name, $value in $grid-breakpoints {
-//     @include media-breakpoint-up($name) {
-//       content: "#{$name} - min-width: #{$value}";
-//     }
-//   }
-// }
+img[src$="#left"] {
+  float: left;
+}
+
+.project:hover {
+  h2 {
+    color: rgb(32, 96, 148);
+  }
+}

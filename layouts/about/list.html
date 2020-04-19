@@ -1,0 +1,38 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-default-list{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+
+
+<h1 class="title">{{ .Title }}</h1>
+<div class="content mb-6">
+    {{ .Content }}
+</div>
+
+<div class="row">
+    {{ range.Pages }}
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-4 print-no-break">
+        <div class="card h-100">
+            <a href="{{ .Permalink }}">
+                <img class="card-img-top" alt="{{ .Title }}"
+                    src='{{ ((.Resources.GetMatch "card.jpg").Fill "400x200 smart").Permalink | absURL}}' />
+            </a>
+            <div class="card-body print-no-break">
+                <p class="card-text"><small class="text-muted">Last updated <span class="timeago"
+                            datetime="{{ ((index (sort .Pages "Lastmod" "desc") 0).Lastmod | default .Lastmod) | dateFormat "2006-01-02 15:04:05"}}"></span></small>
+                </p>
+                <h5 class="card-title">{{ .Title }}</h5>
+                <p class="card-text " style="min-height: 100px;">
+                    {{ .Summary }}
+                </p>
+                <p class="text-center mb-0">
+                    <a href="{{ .Permalink }}" class="btn btn-outline-{{ .Params.color }}">{{ .Title }}</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    {{ end }}
+</div>
+
+{{ end }}

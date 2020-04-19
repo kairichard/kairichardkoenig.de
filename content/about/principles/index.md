@@ -3,7 +3,9 @@ title: 'Principles'
 date: 2019-02-11T19:30:08+10:00
 draft: false
 weight: 4
-summary: This document helps Kai steer his decisions on a daily basis and with being consistent with what to strive for.
+summary: This document helps me steer my decisions on a daily basis and with being consistent with what to strive for.
+color: dark
+
 ---
 
 ---

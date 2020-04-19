@@ -1,0 +1,139 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-default-list{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+
+{{ $profile := (.Site.GetPage "/about") }}
+
+
+
+<h1 class="title">{{ .Title }}</h1>
+<div class="alert alert-info d-none d-print-block" role="alert">
+  This document was generated automatically - For a better viewing experience and further details please visit
+  <b>https://kairichardkoenig.de</b>
+</div>
+
+<div class="content mb-6 d-none d-print-block">
+  {{ $profile.Content }}
+</div>
+
+<div class="content mb-6 details d-none d-print-block">
+  <h3> Details </h3>
+  <div class="row">
+    <div class="col-3">
+      <div class="detail font-weight-bold">Bord</div>
+      <div class="detail font-weight-bold">Nationality</div>
+      <div class="detail font-weight-bold">Family status</div>
+      <div class="detail font-weight-bold">Address</div>
+      <div class="detail font-weight-bold">Languages</div>
+    </div>
+    <div class="col">
+      <div class="detail">02.11.1986, Dachau</div>
+      <div class="detail">German</div>
+      <div class="detail">Unwed</div>
+      <div class="detail">Lychener Str. 76, <br>10437 Berlin</div>
+      <div class="detail">German (native) <br>
+        English (business fluent)</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="page-break"></div>
+
+<img class="img-fluid card-img-top" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 11% 100%);" alt="{{ .Title }}"
+  src='{{ ((.Resources.GetMatch "card.jpg").Fill "900x150 top").Permalink | absURL}}' />
+
+
+<div class="mt-4 work">
+  {{ .Content }}
+  {{ $len := sub (len .Pages) 1}}
+  {{ range $r, $GGPage := .Pages.GroupByDate "2006-01" }}
+  {{ range $e, $GPage := $GGPage.Pages.GroupByParam "employer" }}
+  {{ range $i, $page := $GPage.Pages }}
+  <!-- timeline item 1 -->
+  <div class="row print-no-break">
+    <!-- timeline item 1 left dot -->
+    <div class="col-auto text-center flex-column d-none d-sm-flex d-print-none">
+      <div class="row h-50 ">
+        <div class="col {{if $r }}border-right{{end}}">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+      <div class="m-2">
+        <div class="timeline-icon text-{{ .Params.color }}">
+          <i class="{{ .Params.icon }}"></i>
+        </div>
+      </div>
+      <div class="row h-50">
+        <div class="col {{if lt $r $len  }}border-right{{end}}">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+    </div>
+    <!-- timeline item 1 event content -->
+    <div class="col py-2">
+      <div class="card">
+        <div class="card-body border border-gray">
+          <div class="float-right text-muted text-right">{{ $page.Params.timeframe }} <br />
+            <small>{{ $page.Params.location }}</small>
+          </div>
+          <h3><a href="{{ .Params.link }}">{{ $page.Params.employer }}</a> - {{ $page.Params.role }} </h3>
+          <div class="clearfix mb-2"></div>
+          <div class="content">
+            {{ $page.Content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/row-->
+  {{ end }}
+  {{ end }}
+  {{ end }}
+</div>
+<!--container-->
+
+<div class="page-break"></div>
+
+<h1 class="title mt-5">Education</h1>
+
+<div>
+  <ul>
+    <li>Angewandte Informatik, Kognitive Systeme - Universität Bamberg – 2013 - 2013</li>
+    <li>Fachgebundene Hochschulreife, BOS-Technik – 2010 - 2012</li>
+    <li>Staatlich anerkannter Mediengestalter, IHK – 2007 - 2010</li>
+  </ul>
+</div>
+
+<h1 class="title mt-5">Certificates</h1>
+
+<div class="row certificates">
+  {{ $headless := (.Site.GetPage "/certificates").Pages.ByDate.Reverse }}
+
+  {{ range $headless }}
+  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-3 certificate">
+    <div class="card h-100">
+      <a href="{{ .Params.credential }}" class="d-print-none">
+        <img class="img-fluid card-img-top" alt="{{ .Title }}"
+          src='{{ ((.Resources.GetMatch "*").Fill "420x180").Permalink | absURL}}' />
+
+      </a>
+      <div class="card-body">
+        <p class="card-text acquired"><small class="text-muted">Acquired <span class="timeago"
+              datetime="{{ .Date | dateFormat "2006-01-02 15:04:05"}}"></span></small>
+        </p>
+        <h4 class="card-title">{{ .Title }}</h4>
+        {{ if .Params.credential }}
+        <p class="text-right mb-0 d-print-none">
+          <a href="{{ .Params.credential }}" class="btn btn-outline-success">View Credential<i
+              class="fas fa-award ml-1"></i></a>
+        </p>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  {{end}}
+</div>
+
+
+{{ end }}

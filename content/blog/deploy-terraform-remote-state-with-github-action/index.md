@@ -6,6 +6,7 @@ weight: 1
 keywords: 
     - tech
 summary: Tests, yes tests, tests make you slow; they give you a false sense of confidence. You should determine the health of the system in other ways than solely relying on tests.  
+imageFill: 1140x400 bottom
 ---
 
 Terraform is a tool for building, changing, and versioning infrastructure safely and efficiently. Terraform can manage existing and popular service providers as well as custom in-house solutions.

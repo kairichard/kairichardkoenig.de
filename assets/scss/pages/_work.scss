@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Noto+Serif&display=swap");
+
+@media print {
+  @page {
+    size: auto; /* auto is the initial value */
+    margin: 10mm 10mm 0mm 10mm; /* this affects the margin in the printer settings */
+  }
+
+  html {
+    background-color: #ffffff;
+    margin: 0px; /* this affects the margin on the html before sending to printer */
+  }
+
+  body {
+    font-size: 1px;
+    // border: solid 1px blue;
+    margin: 0; /* margin you want for the content */
+  }
+
+  div.page-break {
+    page-break-before: always;
+  }
+
+  .container {
+    width: auto;
+    padding: 0;
+  }
+
+  div.print-no-break {
+    page-break-inside: avoid;
+  }
+  .mb-4 {
+    margin: 0 !important;
+  }
+  .border {
+    border: none !important;
+  }
+
+  .col,
+  .card-body {
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+
+  .card {
+    border: none !important;
+  }
+  .work {
+    .card-body {
+      margin-top: 20px !important;
+    }
+  }
+  .details {
+    .detail {
+      margin-top: 5px;
+    }
+  }
+  .certificates {
+    .col-xl-3,
+    .col-lg-4,
+    .col-md-6,
+    .col-sm-6,
+    .mb-3 {
+      margin: 0px !important;
+    }
+
+    .certificate {
+      margin-top: 0px !important;
+      padding: 0px !important;
+    }
+
+    .acquired {
+      position: relative;
+      top: 35px;
+      text-align: right;
+    }
+
+    .card-title {
+      margin-bottom: 0px !important;
+      padding: 0px !important;
+    }
+    .card-title::before {
+      content: "\f559";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      line-height: 1;
+      margin-right: 10px;
+      padding-left: 12px;
+    }
+
+    .card-body {
+      margin-top: 0px !important;
+      padding: 0px !important;
+    }
+  }
+}
+
+.work {
+  .card:hover {
+    box-shadow: $box-shadow;
+  }
+  i.fa-rocket {
+    position: relative;
+    top: 3px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+  }
+  i.fa-project-diagram {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+  }
+
+  .timeline-icon {
+    background: #fff;
+    color: #737881;
+    display: block;
+    width: 60px;
+    height: 60px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    text-align: center;
+    -moz-box-shadow: 0 0 0 5px #f5f5f6;
+    -webkit-box-shadow: 0 0 0 5px #f5f5f6;
+    box-shadow: 0 0 0 5px #f5f5f6;
+    line-height: 60px;
+    font-size: 15px;
+    float: left;
+    font-size: 2em;
+  }
+}

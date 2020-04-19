@@ -15,9 +15,22 @@ $container-max-widths: (
 
 $grid-gutter-width: 20px;
 
-$primary: #2b86db;
-$secondary: #1de9b6;
+$primary: #1a2e69;
+$secondary: #fca311;
 $black: #212529;
+
+$theme-colors: ();
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "freundenews": rgb(255, 31, 162),
+  "bitspark": rgb(125, 0, 80),
+  "hightext": rgb(253, 161, 0),
+  "paessler": rgb(0, 44, 99),
+);
+
+$background: #fff;
 
 // Links
 $link-color: $primary;
@@ -27,9 +40,9 @@ $link-hover-decoration: underline;
 
 // Fonts
 $font-size-base: 1rem; // Assumes the browser default, typically `16px`
-$font-family-base: 'Roboto', Arial, sans-serif, -apple-system;
-$font-family-serif: 'Lora', Arial, sans-serif, -apple-system;
-$font-family-mono: 'Roboto Mono', monospace;
+$font-family-base: "Roboto", Arial, sans-serif, -apple-system;
+$font-family-serif: "Lora", Arial, sans-serif, -apple-system;
+$font-family-mono: "Roboto Mono", monospace;
 $line-height-base: 1.4;
 
 // Headings & Paragraph
