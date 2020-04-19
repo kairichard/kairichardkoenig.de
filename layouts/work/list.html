@@ -32,7 +32,7 @@
       <div class="detail">02.11.1986, Dachau</div>
       <div class="detail">German</div>
       <div class="detail">Unwed</div>
-      <div class="detail">Lychener Str. 76, <br>10437 Berlin</div>
+      <div class="detail">Lychener Str. 76 | 10437 Berlin</div>
       <div class="detail">German (native) <br>
         English (business fluent)</div>
     </div>
@@ -97,11 +97,12 @@
 
 <h1 class="title mt-5">Education</h1>
 
-<div>
+<div class="education">
   <ul>
-    <li>Angewandte Informatik, Kognitive Systeme - Universität Bamberg – 2013 - 2013</li>
-    <li>Fachgebundene Hochschulreife, BOS-Technik – 2010 - 2012</li>
-    <li>Staatlich anerkannter Mediengestalter, IHK – 2007 - 2010</li>
+    <li>Angewandte Informatik, Kognitive Systeme - Universität Bamberg – 2013 -
+      2013</i></li>
+    <li>Fachgebundene Hochschulreife, BOS-Technik – 2010 - 2012</i></li>
+    <li>Staatlich anerkannter Mediengestalter, IHK – 2007 - 2010</i></li>
   </ul>
 </div>
 
@@ -119,13 +120,13 @@
 
       </a>
       <div class="card-body">
-        <p class="card-text acquired"><small class="text-muted">Acquired <span class="timeago"
-              datetime="{{ .Date | dateFormat "2006-01-02 15:04:05"}}"></span></small>
+        <p class="card-text acquired"><small class="text-muted"><span class="-timeago"
+              datetime="{{ .Date | dateFormat "2006-01-02 15:04:05"}}"></span>{{ .Date | dateFormat "January 2006"}}</small>
         </p>
         <h4 class="card-title">{{ .Title }}</h4>
         {{ if .Params.credential }}
-        <p class="text-right mb-0 d-print-none">
-          <a href="{{ .Params.credential }}" class="btn btn-outline-success">View Credential<i
+        <p class="text-left mb-0 d-print-none">
+          <a href="{{ .Params.credential }}" target="_blank" class="btn btn-outline-success">Credential<i
               class="fas fa-award ml-1"></i></a>
         </p>
         {{ end }}

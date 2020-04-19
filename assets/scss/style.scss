@@ -83,14 +83,6 @@ img[src$="right"] {
   }
 }
 
-.image-cropper {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%;
-}
-
 .profile-pic {
   display: inline;
   margin: 0 auto;
@@ -98,9 +90,21 @@ img[src$="right"] {
   height: 100%;
   width: auto;
 }
-
-img[src$="#left"] {
-  float: left;
+.social {
+  .fab,
+  .fas {
+    font-size: 0.8em;
+    width: 1.4em;
+    text-decoration: none;
+  }
+  flex-grow: 2;
+  justify-content: flex-end;
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+  @include media-breakpoint-up(md) {
+    display: flex;
+  }
 }
 
 .project:hover {

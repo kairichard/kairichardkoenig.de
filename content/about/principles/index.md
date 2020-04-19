@@ -10,11 +10,10 @@ color: dark
 
 ---
 
-> This document adapted version of what was originally conceived while working at [Paessler AG](https://paessler.com) as an Engineering manager in 2016. It's the result of collaboration with [Pascal Fleck](https://paessler.com) and inspiration from [Nanobox](https://content.nanobox.io/the-developer-manifesto/).
+> This document is an adapted version of what was originally conceived while working at [Paessler AG](https://paessler.com) as Team Manager in 2016. It helps me steer my decisions on a daily basis and with being consistent with what to strive for.
 
 ---
 
-This document helps me steer my decisions on a daily basis and with being consistent with what to strive for.
 
 #### Instead of doing the easy thing do the right thing
 
