@@ -1,0 +1,42 @@
+name: Continuous Integration
+# This workflow is triggered on pushes to the repository.
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@master
+        with:
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.68.3"
+          # extended: true
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Upload math result for job 1
+        uses: actions/upload-artifact@v1
+        with:
+          name: site
+          path: ./public
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download site
+        uses: actions/download-artifact@v1
+        with:
+          name: site
+      - name: deploy
+        run: |
+          npm i -g now 
+          cd site/public && NOW_PROJECT_ID={{ secrets.NOW_PROJECT_ID }} NOW_ORG_ID={{ secrets.NOW_PROJECT_ID }} now deploy --prod
