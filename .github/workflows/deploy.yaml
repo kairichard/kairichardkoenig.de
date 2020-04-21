@@ -23,7 +23,7 @@ jobs:
       - name: Build
         run: hugo --gc --minify --i18n-warnings --log
 
-      - name: Upload math result for job 1
+      - name: Upload site
         uses: actions/upload-artifact@v1
         with:
           name: site
@@ -39,5 +39,6 @@ jobs:
           name: site
       - name: deploy
         run: |
-          npm i -g now 
+          npm i now 
+          export export PATH=`npm bin path`:$PATH
           cd site/public && NOW_PROJECT_ID={{ secrets.NOW_PROJECT_ID }} NOW_ORG_ID={{ secrets.NOW_PROJECT_ID }} now deploy --prod
