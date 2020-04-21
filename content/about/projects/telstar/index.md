@@ -1,5 +1,5 @@
 ---
-title: 'telstar - producers and consumers for redis streams'
+title: 'telstar - Producers and consumers for redis streams'
 date: 2019-02-11T19:27:37+10:00
 draft: false
 links:

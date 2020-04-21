@@ -1,5 +1,5 @@
 ---
-title: 'easytainer.cloud'
+title: 'easytainer.cloud - Simpler docker platform'
 date: 2019-02-11T19:27:37+10:00
 draft: false
 links:
