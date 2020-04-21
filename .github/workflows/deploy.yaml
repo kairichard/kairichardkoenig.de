@@ -41,4 +41,4 @@ jobs:
         run: |
           npm i now 
           export export PATH=`npm bin path`:$PATH
-          cd site/public && NOW_PROJECT_ID={{ secrets.NOW_PROJECT_ID }} NOW_ORG_ID={{ secrets.NOW_PROJECT_ID }} now deploy --prod
+          cd site/ && NOW_PROJECT_ID={{ secrets.NOW_PROJECT_ID }} NOW_ORG_ID={{ secrets.NOW_PROJECT_ID }} now deploy --prod
