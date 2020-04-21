@@ -1,0 +1,42 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-default-list{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+
+<h1 class="title">{{ .Title }}</h1>
+<div class="content mb-4">
+  {{ .Summary }}
+</div>
+
+{{ range .Pages.ByDate.Reverse }}
+
+<div class="card mb-3" style="">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img class="card-img" alt="{{ .Title }}"
+        src='{{ ((.Resources.GetMatch "*").Fill "366x285 smart").Permalink | absURL}}' />
+
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h3 class="card-title">{{ safeHTML .Title }}</h3>
+        <p class="text-left"><small class="text-muted">{{ .Date | dateFormat "January 2006"}}</small></p>
+        <p class="card-text">
+          {{ .Content }}
+        </p>
+        <div class="text-muted text-right ml-1 mb-1">
+          {{ range .Params.links }}
+          <a class="btn btn-outline-{{ index . "color" | default "secondary" }}" target="_blank"
+            href="{{ index . "url" }}">{{ index . "text" }} <i class="{{ index . "icon" }}"
+              style="margin-left:5px"></i></a>
+          {{ end }}
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+{{ end }}

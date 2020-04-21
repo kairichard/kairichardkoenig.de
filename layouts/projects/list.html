@@ -5,7 +5,8 @@
 {{ define "main" }}
 
 <h1 class="title">{{ .Title }}</h1>
-<div class="content">
+<div class="content mb-3">
+  {{ .Summary }}
   {{ .Content }}
 </div>
 
@@ -37,7 +38,7 @@
             {{ range .Params.links }}
             <div class="text-muted text-right float-right ml-1">
               <a class="btn btn-outline-{{ index . "color" | default "secondary" }}" target="_blank"
-                href="{{ index . "url" }}">{{ index . "text" }} <i class="{{ index . "icon" }}"
+                href="{{ index . "url" }}" target="_blank">{{ index . "text" }} <i class="{{ index . "icon" }}"
                   style="margin-left:5px"></i></a>
             </div>
             {{ end }}
