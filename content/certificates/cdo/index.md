@@ -1,5 +1,6 @@
 ---
-title: 'Medienrecht'
-date: 2020-02-13T15:14:39+10:00
+title: 'Chief Digital Officer'
+date: 2020-03-13T15:14:39+10:00
 weight: 1
+credential: /downloads/cdo_credential.pdf
 ---
