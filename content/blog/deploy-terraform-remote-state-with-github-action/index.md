@@ -5,7 +5,7 @@ draft: false
 weight: 1
 keywords: 
     - tech
-summary: Tests, yes tests, tests make you slow; they give you a false sense of confidence. You should determine the health of the system in other ways than solely relying on tests.  
+summary: In this tutorial we will see how you can use Github Actions and Terraform Cloud to build a infrastructure and deploy changes without worrying about your Terraform state.
 imageFill: 1140x400 bottom
 ---
 
