@@ -70,6 +70,9 @@ threshold = 80
     noClasses = true
     style = "monokailight"
     tabWidth = 4
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [imaging]
 # Default resample filter used for resizing. Default is Box,
