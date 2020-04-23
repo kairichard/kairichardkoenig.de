@@ -27,6 +27,6 @@ But what is important are the following things I noticed, no one cares what I bu
 
 #### Effort and creation change existing systems
 
-I say 'almost' because I was lucky, lucky that someone reshared what I did for the technology and maybe the lean-ishness execution. And that got picked up by [@timothep](https://twitter.com/timothep) who runs a [podcast](http://podcast.devjourney.info/) on developer stories and asked if I wanted to take part in his series. To which I said yes. And I hope the stories we talk about inspire others or at least make them laugh a little.
+I say 'almost' because I was lucky, lucky that someone reshared what I did for the technology and maybe the lean-ishness execution. And that got picked up by [@timothep](https://twitter.com/timothep) who runs a [podcast](http://devjourney.info/) on developer stories and asked if I wanted to take part in his series. To which I said yes. And I hope the stories we talk about inspire others or at least make them laugh a little.
 
 The point I am trying to make is that you should never stop creating. I even when you think you never reach anybody or only want to prove something to your self, do it, create it and things will change. I often picture the causality of actions like a thermodynamic system that is in it's lowest energy state, where all systems want to be, and only by putting energy into it, it starts to change - the same with creating. If you want change you need to create (it).

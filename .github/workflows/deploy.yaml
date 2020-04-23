@@ -29,6 +29,20 @@ jobs:
           name: site
           path: ./public
 
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download site
+        uses: actions/download-artifact@v1
+        with:
+          name: site
+
+      - name: bork
+        run: |
+          curl -L https://github.com/smallhadroncollider/brok/releases/download/1.0.0/brok-1.0.0_x86-64-mac.tar.gz -o bork.tar.gz
+          tar -xvzf bork.tar.gz
+          ./brok --ignore "https://kairichardkoenig.de" "https://www.linkedin.com" "http://161.111.111.111" $(find .site/ -type f -name "*.html")
+
   deploy:
     runs-on: ubuntu-latest
     needs: build
