@@ -123,7 +123,7 @@
         <p class="card-text acquired"><small class="text-muted"><span class="-timeago"
               datetime="{{ .Date | dateFormat "2006-01-02 15:04:05"}}"></span>{{ .Date | dateFormat "January 2006"}}</small>
         </p>
-        <h4 class="card-title">{{ .Title }}</h4>
+        <h4 class="card-title" style="min-height: 3rem;">{{ .Title }}</h4>
         {{ if .Params.credential }}
         <p class="text-left mb-0 d-print-none">
           <a href="{{ .Params.credential }}" target="_blank" class="btn btn-outline-success">Credential<i
