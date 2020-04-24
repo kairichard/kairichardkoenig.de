@@ -69,6 +69,12 @@ img[src$="left"] {
   margin-right: 20px;
 }
 
+img[src$="center"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 img[src$="right"] {
   display: block;
   float: right;

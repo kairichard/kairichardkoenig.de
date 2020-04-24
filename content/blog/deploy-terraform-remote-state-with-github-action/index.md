@@ -64,9 +64,7 @@ Now we are ready to initialize our new remote state.
 
 When the command succeeded go back to your [Terraform](https://www.terraform.io/) account and go to general setting of your workspace and mark the state as local. This allows us to use it in CI/CD.
 
-<center>
-![alt text](images/exec_mode.png)
-</center>
+![Change terraform to exec mode](images/exec_mode.png#center)
 
 #### Step 3 - Adding a provider and resources.
 Now we are ready to tell Terraform what resources we want to create and where. For this demonstration we are going to use a simple lamp stack and deploy changes to one of the HTML files. 
@@ -162,9 +160,9 @@ Grab it with and put in a secret named `TF_TOKEN`.
 }
 {{< / highlight >}}
 The result should look like this.
-<center>
-![alt text](images/secrets.png)
-</center>
+
+![Add secret to github](images/secrets.png#center)
+
 
 
 Now we can create a workflow as follows:
