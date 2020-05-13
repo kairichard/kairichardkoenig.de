@@ -1,5 +1,5 @@
 ---
-title: 'Building the ultimate business unit <a href="https://twitter.com/joinAPX">@APX</a>'
+title: 'Building the ultimate business unit <a href="https://twitter.com/apxberlin">@APX</a>'
 date: 2019-07-11T19:27:37+10:00
 links:
     - url: https://www.slideshare.net/kaikonig/build-the-ultimate-bi-unit
