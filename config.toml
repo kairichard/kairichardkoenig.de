@@ -56,8 +56,8 @@ threshold = 80
     meta_twitter_creator = "@kai_richard"
 
   [params.logo]
-      mobile = "/images/head_circle.png"
-      standard  = "/images/head_circle.png"
+      mobile = "/images/index.png"
+      standard  = "/images/index.png"
 
 [markup]
   [markup.highlight]
