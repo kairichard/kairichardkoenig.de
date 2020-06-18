@@ -7,6 +7,9 @@ links:
       icon: fab fa-google
       text: Deck
       color: secondary
+    - url: https://fewture.org/
+      icon: fas fa-external-link-alt
+      text: Landing Page (Mobile only)
 year: 2021
 ---
 
