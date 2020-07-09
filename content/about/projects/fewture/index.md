@@ -10,6 +10,7 @@ links:
     - url: https://fewture.org/
       icon: fas fa-external-link-alt
       text: Landing Page (Mobile only)
+      color: primary
 year: 2021
 ---
 
