@@ -42,7 +42,7 @@ jobs:
         run: |
           curl -L https://github.com/smallhadroncollider/brok/releases/download/1.1.0/brok-1.1.0_x86-64-linux.tar.gz -o bork.tar.gz
           tar -xvzf bork.tar.gz
-          ./brok --only-failures --ignore "https://kairichardkoenig.de" "https://www.linkedin.com" "https://easytainer.cloud" "http://161.111.111.111" $(find ./site -type f -name "*.html")
+          ./brok --only-failures --ignore "https://t.co/DlOcGYdnwB" "https://kairichardkoenig.de" "https://www.linkedin.com" "https://easytainer.cloud" "http://161.111.111.111" $(find ./site -type f -name "*.html")
 
   deploy:
     runs-on: ubuntu-latest
