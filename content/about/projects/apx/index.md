@@ -7,6 +7,7 @@ links:
       icon: fab fa-linkedin
       text: Visit
       color: primary
+timeframe: May 2019 - ongoing
 year: 2020
 ---
 

@@ -12,7 +12,8 @@ links:
       icon: fas fa-external-link-alt
       text: Landing Page
 year: 2019
+timeframe: November 2018 - February 2020
 ---
 
-Programming today requires a shift in thinking. This makes it hard to learn how to write programs. On top of that, IT experts often use a language which is difficult to understand for non technicians.  
+Programming today requires a shift in thinking. This makes it hard to learn how to write programs. On top of that, IT experts often use a language which is difficult to understand for non technicians.
 At [bitspark.de](https://bitspark.de) we develop [Slang](https://github.com/Bitspark/slang) which aims to make programming easier, faster and more comfortable. It avoids coding, repetition and frustration.

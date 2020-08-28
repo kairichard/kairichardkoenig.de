@@ -7,8 +7,7 @@ links:
       icon: fas fa-external-link-alt
       text: Visit
 year: 2008
+timeframe: January 2008 - October 2010
 ---
 
 Over the course of 10 months we rewrote a large portion of the web application at ibusiness.de so it would resemble a modern MVC app more closely. Together we redid the Database-Abstraction-Layer, reimplemented all the affected controllers and wrote a new template parser. Being done with that we designed an applied a more effective way of organizing files inside the project.
-
-[Read more](https://ibusiness.de)

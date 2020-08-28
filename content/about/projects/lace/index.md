@@ -13,6 +13,7 @@ links:
       text: dotfiles
       color: dark
 year: 2017
+timeframe: March 2014 - ongoing
 ---
 
 Logging in to different machines at work or at home and using the same .dotfiles on them. Bootstrap a new machine, even if they are differently flavored. Updating .dotfiles should be a breeze as well as sharing common .dotfiles with your teammates by just installing them next to your own .dotfiles. Lace drew inspiration from brew.

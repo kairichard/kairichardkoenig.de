@@ -7,11 +7,11 @@ links:
       icon: fab fa-github
       text: CLI
       color: dark
-    - url: https://easytainer.cloud
+    - url: https://twitter.com/kai_richard/status/1213425600490299392
       icon: fas fa-times-circle
       text: Shutdown
       color: danger
-
+timeframe: January 2018 - April 2018
 year: 2018
 ---
 

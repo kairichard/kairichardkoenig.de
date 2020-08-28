@@ -15,7 +15,7 @@
   <div class="row">
     <div class="col-5">
       {{ with (.Resources.GetMatch "images/**") }}
-      <a href="{{ .Permalink | absURL}}" target="_blank">
+      <a href="{{ .Permalink | absURL }}" target="_blank">
         <img class="shadow-lg bg-white rounded img-fluid" alt="{{ .Title }}"
           src='{{ (.Resize "400x").Permalink | absURL}}' />
       </a>
@@ -29,6 +29,7 @@
               <h2 class="mb-0">
                 <a href="{{ .Permalink }}">{{ .Title }}</a>
               </h2>
+            <div class="text-muted">{{ .Params.timeframe }} </div>
             </div>
             <p>{{ .Content }}</p>
           </div>
