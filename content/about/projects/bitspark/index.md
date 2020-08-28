@@ -11,7 +11,7 @@ links:
     - url: http://bitspark.de/slang
       icon: fas fa-external-link-alt
       text: Landing Page
-year: 2019
+order: 2019
 timeframe: November 2018 - February 2020
 ---
 

@@ -12,7 +12,7 @@ links:
       icon: fab fa-github
       text: dotfiles
       color: dark
-year: 2017
+order: 2017
 timeframe: March 2014 - ongoing
 ---
 

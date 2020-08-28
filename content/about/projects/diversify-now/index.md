@@ -7,7 +7,7 @@ links:
       icon: fas fa-external-link-alt
       text: Visit Page
       color: primary
-year: 2022
+order: 2022
 timeframe: April 2020 - June 2020
 ---
 DiversifyNow is a volunteer initiative and the result of a design thinking project from March 2020 to May 2020, we wanted to get to the bottom of an important societal question to which we have not been able to find a satisfactory answer to date:
