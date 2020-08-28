@@ -11,6 +11,6 @@ icon: fas fa-newspaper
 link: https://ibusiness.de
 ---
 
-Rewrote a large portion of the web application at [ibusiness.de](https://ibusiness.de) so it would resemble a modern MVC app more closely. Then redid the Database- Abstraction-Layer, reimplemented all the affected controllers and wrote a new template parser. Designed and applied a way of organizing files inside the project by domains. This brought down development time and error rate significantly.
+Rewrote a large portion of the web application at [ibusiness.de](https://ibusiness.de) so it would resemble a modern MVC app more closely. Then redid the Database-Abstraction-Layer, reimplemented all the affected controllers and wrote a new template parser. Designed and applied a way of organizing files inside the project by domains. This brought down development time and error rate significantly.
 
 **Tools:** BOIL, C, Javascript, CSS, HTML, SVN, jQuery
