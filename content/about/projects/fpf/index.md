@@ -10,4 +10,4 @@ links:
 order: 2024
 timeframe: July 2020 - August 2020
 ---
-I joined the futurpackaingforum as the first person with a deep product and technological expertise, the goal was to build a business around sustainable packaging. During my short stay I contributed a detailed business model using google sheets and monte carlo simulations. I also conceptualized products variations that are easier to test and to build. However after just a few weeks I realized that packaging is not capturing my full attention and in order to not suffocate the rest of the effort I left the project.
+I joined the futurpackaingforum as the first person with a deep product and technological expertise, the goal was to build a business around sustainable packaging. During my short stay I contributed a detailed business model using google sheets and monte carlo simulations and a significant portion of the pitch deck. I also conceptualized products variations that are easier to test and to build.
