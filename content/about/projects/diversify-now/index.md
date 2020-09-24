@@ -7,6 +7,10 @@ links:
       icon: fas fa-external-link-alt
       text: Visit Page
       color: primary
+    - url: https://en.diversify-now.de/hintergrund
+      icon: fas fa-search
+      text: Read Back-Story
+      color: secondary
 order: 2022
 timeframe: April 2020 - June 2020
 ---
