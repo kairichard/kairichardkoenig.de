@@ -17,4 +17,4 @@ Coached my team to become the best version of themselves with different feedback
 Pioneered Innovation Management and developed multiple DevOps product ideas using Design Thinking and Design Sprints. Evangelized the company on numerous events as attendee and speaker at [DevOps Camp](https://twitter.com/DrSlow/status/1014203485108228096) and Webweek, making the company more visible to the community and potential candidates. Coled the introduction of companywide OKRs forming a tag-team and coordinating “war-rooms”.
 
 
-**Tools:** Python, Javascript, Gitlab CI/CD, docker, Kubernetes, Cloudflare, statsd, Redis, HA-Proxy, Django, Percona, Buildbot, Jenkins, Ansible, AWS Lambda, Travis Ci, MySQL
+**Tools:** Python, Javascript, Gitlab CI/CD, docker, Kubernetes, Cloudflare, statsd, Redis, HA-Proxy, Django, Percona, Buildbot, Jenkins, Ansible, AWS Lambda, Travis Ci, MySQL, Jira, Confluence

@@ -15,4 +15,4 @@ After my second endeavor (Bitspark) failed to solve a problem significant enough
 
 And since I am never satisfied with what I know, I persued three more certifications during this time.
 
-**Tools:** <span class="text-monospaced">Wix, Figma, Adobe XD, HTML, CSS, XLS, Google Script Engine, Facebook Ads, Powerpoint, Vue, Typescript, Python, Flask, Asana, Terraform, Ansible, Github CI, Docker</span>
+**Tools:** <span class="text-monospaced">Wix, Figma, Adobe XD, HTML, CSS, XLS, Google Script Engine, Facebook Ads, Powerpoint, Vue, Typescript, Python, Flask, Asana, Terraform, Ansible, Github CI, Docker, Asana, Trello, Notion</span>
