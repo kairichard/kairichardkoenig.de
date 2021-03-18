@@ -2,7 +2,7 @@
 title: '<a href="https://twitter.com/DevJourneyFM">#DevJourney</a> Episode #73 with <a href="https://twitter.com/timothep">@timothep</a>'
 date: 2019-02-11T19:27:37+10:00
 links:
-    - url: https://devjourneyfm.github.io/Guests/73_KaiKoenig.html
+    - url: https://devjourney.info/Guests/73-KaiKoenig.html
       icon: fas fa-podcast
       text: Listen
       color: primary

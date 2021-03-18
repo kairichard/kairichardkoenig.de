@@ -9,7 +9,7 @@ links:
       text: Source
       color: dark
 
-    - url: http://www.kkapfhammer.eu/en/wholelottalight.html
+    - url: http://www.kkapfhammer.eu/
       icon: fas fa-external-link-alt
       text: Exposé
 
