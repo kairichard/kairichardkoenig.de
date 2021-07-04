@@ -4,7 +4,7 @@ date: 2021-01-01
 
 employer: M2. technology & project consulting GmbH
 role: Head of Technology
-timeframe: Jan 2021 - ongoing
+timeframe: Jan 2021 - July 2021
 location: Berlin, Germany
 color: m2dot
 icon: fas fa-cloud
