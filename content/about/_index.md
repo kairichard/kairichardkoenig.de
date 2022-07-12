@@ -5,7 +5,7 @@ weight: 1
 Summary: Born and raised in Munich moved to Nuremberg and eventually Berlin. Before creating my first game with Shockwave in Lingo my interest was in 3D modelling and waiting for a render to finish in Maxon Cinema 4D. But with the experience of how powerful programming can be I started learning HTML then Javascript and moving to the backend side of things and onto PHP, memcached, MySQL and Ruby on Rails. And from there it never stopped.
 ---
 
-<img src="/images/head2.jpg" alt="Project logo" height="150" width="180" style="float:left; padding: 0em 1em 0 0"></a>
+<img src="/images/head3.jpg" alt="Project logo" height="150" width="180" style="float:left; padding: 0em 1em 0 0"></a>
 
 #### Kai Richard König
 Born and raised in Munich moved to Nuremberg and eventually Berlin. Before creating my first game with [Shockwave](https://en.wikipedia.org/wiki/Adobe_Shockwave_Player) in [Lingo](https://en.wikipedia.org/wiki/Lingo_(programming_language)) my interest was in 3D modelling and waiting for a render to finish in [Maxon Cinema 4D](https://en.wikipedia.org/wiki/Cinema_4D). But with the experience of how powerful programming can be I started learning HTML then Javascript and moving to the backend side of things and onto PHP, memcached, MySQL and Ruby on Rails. And from there it never stopped. When I am not using a compute to create something I like playing badminton, eating delicious food, traveling, and reading up on topics related to psychology, philosophy, investing, and business building.
