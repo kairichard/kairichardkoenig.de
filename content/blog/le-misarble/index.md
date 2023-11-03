@@ -5,7 +5,7 @@ draft: false
 weight: 4
 keywords: 
     - self
-summary: I always sucked at writing; I still do. I even think it limits positive change and value I could bring to my community - it's frustrating. 
+summary: "I always sucked at writing; I still do. I even think it limits positive change and value I could bring to my community - it's frustrating. "
 ---
 
 I always sucked at writing; I still do. I even think it limits the positive change and value I could bring to my community - it's frustrating. 
