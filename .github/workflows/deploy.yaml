@@ -21,7 +21,7 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --gc --minify --i18n-warnings --log
+        run:  hugo --gc --minify --printI18nWarnings -v
 
       - name: Upload site
         uses: actions/upload-artifact@v1
