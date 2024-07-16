@@ -5,11 +5,6 @@ on:
     branches:
       - master
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,16 +20,13 @@ jobs:
           hugo-version: "0.128.2"
           extended: true
 
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
-
       - name: Build
         run:  hugo --gc --minify --printI18nWarnings -v
 
       - name: Upload site
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-artifact@v1
         with:
+          name: site
           path: ./public
 
   verify:
@@ -44,21 +36,24 @@ jobs:
       - name: Download site
         uses: actions/download-artifact@v1
         with:
-          name: github-pages
+          name: site
 
       - name: bork
         run: |
           curl -L https://github.com/smallhadroncollider/brok/releases/download/1.1.0/brok-1.1.0_x86-64-linux.tar.gz -o bork.tar.gz
           tar -xvzf bork.tar.gz
-          ./brok --only-failures --ignore "https://t.co/DlOcGYdnwB" "https://kairichardkoenig.de" "https://www.linkedin.com" "https://easytainer.cloud" "http://161.111.111.111" "https://www.futurepackagingforum.com/" "https://linkist.de/" "https://dilbertblog.typepad.com" "https://www.hotcars.com/" $(find ./site -type f -name "*.html")
+          ./brok --only-failures --ignore "https://t.co/DlOcGYdnwB" "https://kairichardkoenig.de" "https://www.linkedin.com" "https://easytainer.cloud" "http://161.111.111.111" "https://www.futurepackagingforum.com/" "https://linkist.de/" $(find ./site -type f -name "*.html")
 
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Download site
+        uses: actions/download-artifact@v1
+        with:
+          name: site
+      - name: deploy
+        run: |
+          npm i now
+          export export PATH=`npm bin path`:$PATH
+          cd site/ && NOW_PROJECT_ID=${{ secrets.NOW_PROJECT_ID }} NOW_ORG_ID=${{ secrets.NOW_ORG_ID }} now --token=${{ secrets.NOW_TOKEN }} deploy --prod
