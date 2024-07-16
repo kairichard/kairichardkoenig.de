@@ -29,9 +29,8 @@ jobs:
         run:  hugo --gc --minify --printI18nWarnings -v
 
       - name: Upload site
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: site
           path: ./public
 
   verify:
@@ -41,7 +40,7 @@ jobs:
       - name: Download site
         uses: actions/download-artifact@v1
         with:
-          name: site
+          name: github-pages
 
       - name: bork
         run: |
