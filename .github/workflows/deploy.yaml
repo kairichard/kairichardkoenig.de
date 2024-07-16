@@ -25,6 +25,10 @@ jobs:
           hugo-version: "0.128.2"
           extended: true
 
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
       - name: Build
         run:  hugo --gc --minify --printI18nWarnings -v
 
@@ -50,8 +54,8 @@ jobs:
 
   deploy:
     environment:
-      name: production
-      url: https://kairichardkoenig.de
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
     steps:
