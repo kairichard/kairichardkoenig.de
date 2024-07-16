@@ -4,7 +4,7 @@ date: 2021-04-01
 
 employer: Self-Employed
 role: Customer Tracking Consultant & Technical Interviewer
-timeframe: July 2021 - ongoing
+timeframe: July 2021 - December 2022
 location: Berlin Area, Germany
 color: black
 icon: fas fa-chart-bar
