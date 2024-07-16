@@ -1,4 +1,4 @@
-{{- if .Site.IsServer -}}
+{{- if hugo.IsServer -}}
   <!-- Dont add Google analytics to localhost -->
 {{ else }}
   <script async defer data-domain="kairichardkoenig.de" src="https://plausible.io/js/plausible.js"></script>

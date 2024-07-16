@@ -3,14 +3,14 @@ title: 'Only through creations can we initiate change'
 date: 2019-02-11T19:30:08+10:00
 draft: false
 weight: 4
-keywords: 
+keywords:
     - self
-summary: Some time ago, I tweeted about a service I have built - here are some lessons I learned from that. 
+summary: Some time ago, I tweeted about a service I have built - here are some lessons I learned from that.
 ---
 
 Some time ago, I tweeted about a service I built.
 
-{{< tweet 1168542359518359552 >}}
+{{< tweet user="kai_richard" id="1168542359518359552" >}}
 
 
 It's a system that can alert you via email if a stock crosses a threshold either up or down. That is it, nothing more. It's a combination of iexcloud, python code, docker, ansible, airtable, and mailgun - all tied together in an afternoon.
