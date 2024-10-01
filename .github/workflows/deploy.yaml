@@ -24,7 +24,7 @@ jobs:
         run:  hugo --gc --minify --printI18nWarnings -v
 
       - name: Upload site
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v4
         with:
           name: site
           path: ./public
@@ -34,7 +34,7 @@ jobs:
     needs: build
     steps:
       - name: Download site
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4
         with:
           name: site
 
@@ -49,7 +49,7 @@ jobs:
     needs: build
     steps:
       - name: Download site
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4
         with:
           name: site
       - name: deploy
