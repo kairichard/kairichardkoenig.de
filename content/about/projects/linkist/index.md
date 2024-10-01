@@ -4,11 +4,12 @@ date: 2020-05-11T19:27:37+10:00
 draft: false
 links:
     - url: https://linkist.de/
-      icon: fas fa-external-link-alt
-      text: Visit Page
-      color: primary
+      icon: fas fa-times-circle
+      text: Shutdown
+      color: danger
+
 order: 2023
-timeframe: June 2020 - ongoing
+timeframe: June 2020 - December 2023
 ---
 
 Sharing and discovering new content is an essential part of how the internet works.
