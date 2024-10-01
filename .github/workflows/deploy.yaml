@@ -37,6 +37,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: site
+          path: ./public
 
       - name: bork
         run: |
@@ -52,6 +53,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: site
+          path: ./public
       - name: deploy
         run: |
           npm i now
