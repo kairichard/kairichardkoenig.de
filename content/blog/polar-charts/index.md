@@ -28,7 +28,14 @@ A typical example of a polar chart looks like this:
 
 ![Example of a Polar Chart](images/polar_chart_example.png#center)
 
-### What we tracked in order to built a boat specific polar chart
+
+### What is TimeZero?
+
+TimeZero is a go-to tool in professional sailing races for its powerful navigation and route planning features. It helps crews stay ahead by providing over the air data updates like weather updates, currents, and tides, so they can make smarter decisions as conditions change. With its accurate chart plotting and precise positioning, teams can plan the best routes and react quickly when needed. In high-stakes racing, having reliable software like TimeZero on board is key to staying competitive and making sure every move counts.
+
+![How we used TZ on board](images/tz.jpg#center)
+
+### What we tracked in order to built a boat specific polar chart?
 
 To build an effective polar chart, several data sources are necessary:
 
