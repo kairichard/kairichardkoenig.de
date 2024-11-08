@@ -34,6 +34,7 @@ threshold = 80
     url = "/blog/"
     weight = 3
 
+
 [params]
   google_analytics_id=""
   homepage_button_link = '/about'
@@ -81,7 +82,7 @@ threshold = 80
 resampleFilter = "CatmullRom"
 
 # Default JPEG quality setting. Default is 75.
-quality = 100
+quality = 90
 
 # Anchor used when cropping pictures.
 # Default is "smart" which does Smart Cropping, using https://github.com/muesli/smartcrop
