@@ -4,3 +4,6 @@ node_modules
 public
 terminal
 resources
+.hugo_build.lock
+.brokdb
+brok
