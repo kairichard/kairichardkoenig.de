@@ -1,0 +1,22 @@
+# Twitter URLs (known to be rate-limited)
+https://twitter.com/*
+https://t.co/*
+
+# Internal URLs
+https://kairichardkoenig.de
+https://www.linkedin.com
+https://easytainer.cloud
+
+# External URLs that are known to be problematic
+http://161.111.111.111
+https://www.futurepackagingforum.com/
+https://linkist.de/
+
+# Specific problematic URLs
+https://www.clipperroundtheworld.com/uploads/slir/w1500-h560-q100-c1500x560/Fleet_Main.jpg
+https://bitspark.de
+http://bitspark.de/slang
+http://www.kkapfhammer.eu/
+https://www.diversify-now.de/
+https://en.diversify-now.de/hintergrund
+https://dilbertblog.typepad.com/the_dilbert_blog/2007/06/the_day_you_bec.html 
