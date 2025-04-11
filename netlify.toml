@@ -1,0 +1,9 @@
+[build]
+  base = "."
+  publish = "public/"
+  command = "hugo --gc --minify --printI18nWarnings -v"
+
+[context.production.environment]
+  HUGO_VERSION = "0.128.2"
+  HUGO_ENV = "production"
+  TZ = "Europe/Berlin"
